@@ -147,19 +147,19 @@ const ContactInfo = () => {
                 </p>
 
                 <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg">
-                  <h4 className="font-semibold mb-3 text-center">Success Metrics</h4>
+                  <h4 className="font-semibold mb-3 text-center">Our Commitment</h4>
                   <div className="grid grid-cols-3 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">98%</div>
-                      <div className="text-xs text-gray-600">AP Success Rate</div>
+                      <div className="text-2xl font-bold text-blue-600">100%</div>
+                      <div className="text-xs text-gray-600">Qualified Tutors</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-green-600">150+</div>
-                      <div className="text-xs text-gray-600">Students Taught</div>
+                      <div className="text-2xl font-bold text-green-600">24hr</div>
+                      <div className="text-xs text-gray-600">Response Time</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-purple-600">100%</div>
-                      <div className="text-xs text-gray-600">Perfect Scores</div>
+                      <div className="text-2xl font-bold text-purple-600">1:1</div>
+                      <div className="text-xs text-gray-600">Personalized Attention</div>
                     </div>
                   </div>
                 </div>
