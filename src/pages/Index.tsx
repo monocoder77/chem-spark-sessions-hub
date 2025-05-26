@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FlaskConical, Star, BookOpen, Users, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -78,8 +77,8 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
                   <Star className="w-8 h-8 mx-auto mb-3 text-blue-200" />
-                  <h3 className="font-semibold mb-2">Proven Results</h3>
-                  <p className="text-blue-100 text-sm">98% of students achieve 4 or 5 on AP exam</p>
+                  <h3 className="font-semibold mb-2">Expert Tutors</h3>
+                  <p className="text-blue-100 text-sm">Learn from tutors with perfect AP Chemistry scores</p>
                 </CardContent>
               </Card>
             </div>
