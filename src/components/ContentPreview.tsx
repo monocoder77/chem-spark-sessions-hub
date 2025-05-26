@@ -8,35 +8,55 @@ const ContentPreview = () => {
   const sampleProblems = [
     {
       id: 1,
+      title: "Dimensional Analysis",
+      difficulty: "Advanced Prep",
+      topic: "Foundation Skills",
+      problem: "Convert 2.5 moles of glucose (C₆H₁₂O₆) to grams using dimensional analysis",
+      hint: "Use molar mass and unit conversion factors"
+    },
+    {
+      id: 2,
       title: "Equilibrium Calculations",
-      difficulty: "AP Level",
+      difficulty: "AP Prep",
       topic: "Chemical Equilibrium",
       problem: "Calculate the equilibrium concentrations for the reaction: N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
       hint: "Use the ICE table method and Kc = 0.105 at 472°C"
     },
     {
-      id: 2,
-      title: "Thermodynamics Problem",
-      difficulty: "Advanced",
-      topic: "Enthalpy & Entropy",
-      problem: "Determine ΔG° for the combustion of methane at 298K using standard formation data",
-      hint: "Remember: ΔG° = ΔH° - TΔS°"
-    },
-    {
       id: 3,
-      title: "Electrochemistry",
-      difficulty: "AP Level",
-      topic: "Redox & Cells",
-      problem: "Calculate the cell potential for a galvanic cell with Zn²⁺/Zn and Cu²⁺/Cu half-cells",
-      hint: "E°cell = E°cathode - E°anode"
+      title: "Kinetics Problem",
+      difficulty: "AP Crash Course",
+      topic: "Reaction Rates",
+      problem: "Determine the rate law and rate constant for a reaction given experimental data",
+      hint: "Compare initial rates to find the order with respect to each reactant"
     }
   ];
 
-  const topicsCovered = [
-    { icon: FlaskConical, title: "Atomic Structure", description: "Electron configuration, periodicity, and bonding" },
-    { icon: Calculator, title: "Stoichiometry", description: "Mass relationships and limiting reagents" },
-    { icon: BookOpen, title: "Thermodynamics", description: "Enthalpy, entropy, and Gibbs free energy" },
-    { icon: Award, title: "Kinetics", description: "Reaction rates and mechanisms" }
+  const advancedPrepTopics = [
+    "Dimensional Analysis",
+    "Naming",
+    "Basic Reactions",
+    "Balancing Reactions",
+    "Stoichiometry",
+    "Net Ionic Redox"
+  ];
+
+  const apChemPrepTopics = [
+    "Go over all units slightly",
+    "Unit 1 - Atomic Structure",
+    "Unit 2 - Molecular & Ionic Bonding",
+    "Kinetics",
+    "Equilibrium",
+    "Acids & Bases"
+  ];
+
+  const apCrashCourseTopics = [
+    "Final Review of Key Units",
+    "Exam Strategy & Timing",
+    "FRQ Problem Types",
+    "Calculator & Non-Calculator Sections",
+    "Common Mistakes to Avoid",
+    "Last-Minute Formula Review"
   ];
 
   return (
@@ -49,23 +69,72 @@ const ContentPreview = () => {
           </p>
         </div>
 
-        {/* Topics Covered */}
+        {/* Topics Covered by Session */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center mb-8 text-gray-800">Core Topics Covered</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {topicsCovered.map((topic, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className="mx-auto w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                    <topic.icon className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <CardTitle className="text-lg">{topic.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-center">{topic.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+          <h3 className="text-2xl font-semibold text-center mb-8 text-gray-800">Core Topics by Session</h3>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Advanced Chemistry Prep */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="mx-auto w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <FlaskConical className="w-6 h-6 text-blue-600" />
+                </div>
+                <CardTitle className="text-lg">Advanced Chemistry Prep</CardTitle>
+                <CardDescription>Foundation concepts and problem-solving</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {advancedPrepTopics.map((topic, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm">{topic}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* AP Chemistry Prep */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="mx-auto w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                  <BookOpen className="w-6 h-6 text-green-600" />
+                </div>
+                <CardTitle className="text-lg">AP Chemistry Prep</CardTitle>
+                <CardDescription>Comprehensive AP curriculum coverage</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {apChemPrepTopics.map((topic, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm">{topic}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* AP Chemistry Crash Course */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="mx-auto w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                  <Award className="w-6 h-6 text-purple-600" />
+                </div>
+                <CardTitle className="text-lg">AP Chemistry Crash Course</CardTitle>
+                <CardDescription>Final exam preparation and strategy</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {apCrashCourseTopics.map((topic, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm">{topic}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
@@ -101,7 +170,7 @@ const ContentPreview = () => {
 
         {/* Teaching Approach */}
         <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8">
-          <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">My Teaching Approach</h3>
+          <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">Our Teaching Approach</h3>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">

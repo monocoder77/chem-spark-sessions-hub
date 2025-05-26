@@ -15,27 +15,6 @@ const Index = () => {
     }
   };
 
-  const testimonials = [
-    {
-      name: "Sarah Chen",
-      grade: "AP Chemistry Student",
-      text: "I went from struggling with basic concepts to scoring a 5 on the AP exam! The tutoring sessions were incredibly helpful.",
-      rating: 5
-    },
-    {
-      name: "Michael Rodriguez",
-      grade: "High School Junior", 
-      text: "Finally understand equilibrium and thermodynamics. The problem-solving strategies make everything click.",
-      rating: 5
-    },
-    {
-      name: "Emma Thompson",
-      grade: "AP Chemistry Student",
-      text: "Best chemistry tutor ever! Made complex topics easy to understand and boosted my confidence.",
-      rating: 5
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -147,9 +126,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white font-bold text-xl">1</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Chemistry Foundations</h3>
+                <h3 className="text-xl font-bold mb-3">Advanced Chemistry Prep</h3>
                 <p className="text-gray-600 mb-4">June 10-14, 2024</p>
-                <p className="text-sm text-gray-600">Build a strong foundation in core chemistry concepts and problem-solving techniques</p>
+                <p className="text-sm text-gray-600">Build a strong foundation in advanced chemistry concepts and problem-solving techniques</p>
               </CardContent>
             </Card>
             
@@ -158,9 +137,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white font-bold text-xl">2</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">AP Exam Prep</h3>
+                <h3 className="text-xl font-bold mb-3">AP Chemistry Prep</h3>
                 <p className="text-gray-600 mb-4">July 1-5, 2024</p>
-                <p className="text-sm text-gray-600">Master advanced topics and learn proven strategies for AP Chemistry exam success</p>
+                <p className="text-sm text-gray-600">Comprehensive preparation for AP Chemistry with focus on all units and key concepts</p>
               </CardContent>
             </Card>
             
@@ -169,9 +148,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Advanced Problem Solving</h3>
+                <h3 className="text-xl font-bold mb-3">AP Chemistry Crash Course</h3>
                 <p className="text-gray-600 mb-4">July 22-26, 2024</p>
-                <p className="text-sm text-gray-600">Tackle complex calculations and laboratory applications with confidence</p>
+                <p className="text-sm text-gray-600">Intensive final preparation with exam strategies and last-minute review</p>
               </CardContent>
             </Card>
           </div>
@@ -180,35 +159,6 @@ const Index = () => {
 
       {/* Content Preview Component */}
       <ContentPreview />
-
-      {/* Testimonials */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Student Success Stories</h2>
-            <p className="text-xl text-gray-600">Hear from students who've achieved their chemistry goals</p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
-                  <div>
-                    <p className="font-semibold text-gray-800">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.grade}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Booking Form Component */}
       <BookingForm />
@@ -243,8 +193,8 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>chemistry.tutor@email.com</li>
-                <li>(555) 123-4567</li>
+                <li>mentora@gmail.com</li>
+                <li>(254) 271-7880</li>
                 <li>Available for online & in-person tutoring</li>
               </ul>
             </div>
