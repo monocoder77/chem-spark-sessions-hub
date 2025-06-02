@@ -36,7 +36,7 @@ const ContactInfo = () => {
   ];
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:mentora@gmail.com?subject=Chemistry Tutoring Inquiry';
+    window.location.href = 'mailto:mentora@gmail.com?subject=Tutoring Inquiry';
   };
 
   const handlePhoneClick = () => {
@@ -49,7 +49,7 @@ const ContactInfo = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet Your Tutors</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Learn from experienced tutors who have mastered AP Chemistry and achieved exceptional results
+            Learn from experienced tutors who have achieved exceptional results in mathematics, chemistry, and test preparation
           </p>
         </div>
 
@@ -136,14 +136,13 @@ const ContactInfo = () => {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-700">
-                  We believe every student can excel in chemistry with the right guidance. Our approach combines 
-                  rigorous academic preparation with practical problem-solving skills that build confidence 
-                  and lasting understanding.
+                  We believe every student can excel in mathematics, chemistry, and test preparation with the right guidance. 
+                  Our approach combines rigorous academic preparation with practical problem-solving skills that build 
+                  confidence and lasting understanding.
                 </p>
                 <p className="text-gray-700">
-                  Whether you're preparing for advanced chemistry concepts, the AP exam, or need intensive 
-                  crash course preparation, our experienced tutors will meet you where you are and help you 
-                  reach your goals.
+                  Whether you're preparing for advanced coursework, standardized tests, or need foundational support, 
+                  our experienced tutors will meet you where you are and help you reach your goals through personalized instruction.
                 </p>
 
                 <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg">
@@ -192,7 +191,7 @@ const ContactInfo = () => {
                 />
               </div>
               <textarea 
-                placeholder="Your message or questions about chemistry tutoring..."
+                placeholder="Your message or questions about tutoring..."
                 rows={4}
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
