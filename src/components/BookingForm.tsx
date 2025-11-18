@@ -40,7 +40,8 @@ const BookingForm = () => {
       name: 'Timi',
       specialties: ['Chemistry', 'Mathematics'],
       description: '100 test average, 2 years teaching experience',
-      availability: 'Tuesday-Sunday, 1:00-7:00 PM'
+      availability: 'Tuesday-Sunday, 1:00-7:00 PM',
+      actScore: '35'
     }
   ];
 
@@ -107,6 +108,9 @@ const BookingForm = () => {
                       <span className="font-medium">Specialties:</span>
                       <span>{tutor.specialties.join(', ')}</span>
                     </div>
+                    {tutor.actScore && (
+                      <p className="text-purple-300">35 ACT score</p>
+                    )}
                     <div className="flex items-center gap-2 text-gray-600">
                       <Clock className="w-4 h-4" />
                       <span>{tutor.availability}</span>

@@ -195,7 +195,7 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li>mentora@gmail.com</li>
                 <li>(254) 271-7880</li>
-                <li>Available for online & in-person tutoring</li>
+                <li>Available for online tutoring</li>
               </ul>
             </div>
           </div>
